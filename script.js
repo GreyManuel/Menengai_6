@@ -1,3 +1,5 @@
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+
 const wrapper = document.querySelector('.wrapper');
 const question = document.querySelector('.question');
 const yesBtn = document.querySelector('.yes-btn');
@@ -13,3 +15,12 @@ noBtn.addEventListener('mouseover', () => {
     noBtn.style.left = i + 'px';
     noBtn.style.top = j + 'px';
 });
+
+
+
+const btn = document.getElementById("btn")
+function makeConfetti(){
+    confetti()
+}
+
+btn.addEventListener("click", makeConfetti)
